@@ -1,0 +1,489 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Administradores",
+        "permissions": [
+            [
+                "add_animal",
+                "gestion_sanitaria",
+                "animal"
+            ],
+            [
+                "change_animal",
+                "gestion_sanitaria",
+                "animal"
+            ],
+            [
+                "delete_animal",
+                "gestion_sanitaria",
+                "animal"
+            ],
+            [
+                "view_animal",
+                "gestion_sanitaria",
+                "animal"
+            ],
+            [
+                "add_historialsanitario",
+                "gestion_sanitaria",
+                "historialsanitario"
+            ],
+            [
+                "change_historialsanitario",
+                "gestion_sanitaria",
+                "historialsanitario"
+            ],
+            [
+                "delete_historialsanitario",
+                "gestion_sanitaria",
+                "historialsanitario"
+            ],
+            [
+                "view_historialsanitario",
+                "gestion_sanitaria",
+                "historialsanitario"
+            ],
+            [
+                "add_productosanitario",
+                "gestion_sanitaria",
+                "productosanitario"
+            ],
+            [
+                "change_productosanitario",
+                "gestion_sanitaria",
+                "productosanitario"
+            ],
+            [
+                "delete_productosanitario",
+                "gestion_sanitaria",
+                "productosanitario"
+            ],
+            [
+                "view_productosanitario",
+                "gestion_sanitaria",
+                "productosanitario"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Veterinarios",
+        "permissions": [
+            [
+                "view_animal",
+                "gestion_sanitaria",
+                "animal"
+            ],
+            [
+                "view_historialsanitario",
+                "gestion_sanitaria",
+                "historialsanitario"
+            ],
+            [
+                "view_productosanitario",
+                "gestion_sanitaria",
+                "productosanitario"
+            ]
+        ]
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$5OmA4U37uhGYjvmxVoFqJu$rWWMvum+yGGLpVvhluatCgOIlihUrWg9MTOLu8VAWJw=",
+        "last_login": "2026-01-31T16:08:51.603Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-01-26T19:41:21Z",
+        "groups": [
+            [
+                "Administradores"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$0CgP5KbX23vxBLfUaDIVYr$FQBzZSTmRJVKZZ5i7X9PY8NcDPRXxDuZ3BBXYC40T6g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "veterinario",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-01-26T19:51:02Z",
+        "groups": [
+            [
+                "Veterinarios"
+            ]
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6q8hf2pcj3j5chfvun3ypd4749w3xqsi",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCGgWJduu8ZyDCAVA0kpV0Z765NutDtf-_9l_C0rcVvPS1-juIiQJx-t0D8SHUH8U711iS3ui5zkLsiD9rl1GJ6Xg_376BQL98aAUGfjUrg9AAQo3VGB4WKkcmQ0tlgHiEgZIfOWGsCcBx0yKwS0yjeH6cVNxU:1vkSTe:f2-Y4WYaDBPwfvt-ed2F2uKYiM1h0q2AKBucL70dXok",
+        "expire_date": "2026-02-09T19:42:22.185Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jpmsas896fm5j5rl5cgtmrfsaeun9ess",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCGgWJduu8ZyDCAVA0kpV0Z765NutDtf-_9l_C0rcVvPS1-juIiQJx-t0D8SHUH8U711iS3ui5zkLsiD9rl1GJ6Xg_376BQL98aAUGfjUrg9AAQo3VGB4WKkcmQ0tlgHiEgZIfOWGsCcBx0yKwS0yjeH6cVNxU:1vmDWl:0YRfhZtOS33fTcZ4xoSaZbgHhmYpu1AF6oU-ZfT7ViY",
+        "expire_date": "2026-02-14T16:08:51.608Z"
+    }
+},
+{
+    "model": "gestion_sanitaria.animal",
+    "pk": 1,
+    "fields": {
+        "created_at": "2026-01-26T22:22:27.073Z",
+        "updated_at": "2026-01-26T22:22:27.073Z",
+        "nombre": "Nala",
+        "tipo_animal": "Perro",
+        "fecha_nacimiento": "2014-03-27",
+        "estado": "ACTIVO"
+    }
+},
+{
+    "model": "gestion_sanitaria.animal",
+    "pk": 3,
+    "fields": {
+        "created_at": "2026-01-26T22:54:00.656Z",
+        "updated_at": "2026-01-26T22:54:00.656Z",
+        "nombre": "Pompom",
+        "tipo_animal": "Conejo",
+        "fecha_nacimiento": "2025-06-21",
+        "estado": "ACTIVO"
+    }
+},
+{
+    "model": "gestion_sanitaria.productosanitario",
+    "pk": 2,
+    "fields": {
+        "created_at": "2026-01-26T23:08:32.527Z",
+        "updated_at": "2026-01-26T23:34:20.399Z",
+        "nombre": "Tratamiento A",
+        "tipo": "TRATAMIENTO",
+        "descripcion": "Mastitis",
+        "unidades_disponibles": 11,
+        "volver_a_suministrar_dias": 647
+    }
+},
+{
+    "model": "gestion_sanitaria.productosanitario",
+    "pk": 3,
+    "fields": {
+        "created_at": "2026-01-26T23:45:21.090Z",
+        "updated_at": "2026-01-26T23:45:21.090Z",
+        "nombre": "Vacuna A",
+        "tipo": "VACUNA",
+        "descripcion": "Vacuna para crías",
+        "unidades_disponibles": 2,
+        "volver_a_suministrar_dias": 67
+    }
+},
+{
+    "model": "gestion_sanitaria.historialsanitario",
+    "pk": 5,
+    "fields": {
+        "created_at": "2026-01-26T23:34:29.893Z",
+        "updated_at": "2026-01-26T23:34:29.893Z",
+        "animal": 3,
+        "producto": 2,
+        "fecha_suministro": "2026-01-12",
+        "observaciones": "Se suministra la primera dosis"
+    }
+},
+{
+    "model": "gestion_sanitaria.historialsanitario",
+    "pk": 6,
+    "fields": {
+        "created_at": "2026-01-26T23:48:02.461Z",
+        "updated_at": "2026-01-26T23:48:02.461Z",
+        "animal": 3,
+        "producto": 3,
+        "fecha_suministro": "2026-01-27",
+        "observaciones": ""
+    }
+},
+{
+    "model": "gestion_sanitaria.historialsanitario",
+    "pk": 7,
+    "fields": {
+        "created_at": "2026-01-26T23:53:26.072Z",
+        "updated_at": "2026-01-26T23:53:26.072Z",
+        "animal": 1,
+        "producto": 2,
+        "fecha_suministro": "2026-01-03",
+        "observaciones": "Infección grave"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-01-26T19:44:11.392Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "1",
+        "object_repr": "Administradores",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-01-26T19:46:03.103Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "object_id": "2",
+        "object_repr": "Veterinarios",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-01-26T19:51:03.220Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "veterinario",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-01-26T19:52:43.870Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "veterinario",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-01-26T19:52:54.785Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-01-26T23:06:42.263Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "productosanitario"
+        ],
+        "object_id": "1",
+        "object_repr": "Vacuna A [VACUNA]",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-01-26T23:31:38.888Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "productosanitario"
+        ],
+        "object_id": "2",
+        "object_repr": "Tratamiento A [TRATAMIENTO]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Unidades disponibles\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-01-26T23:31:54.791Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "historialsanitario"
+        ],
+        "object_id": "1",
+        "object_repr": "Pompom - Conejo - Tratamiento A [TRATAMIENTO] (2026-01-12)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-01-26T23:33:05.591Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "productosanitario"
+        ],
+        "object_id": "2",
+        "object_repr": "Tratamiento A [TRATAMIENTO]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Unidades disponibles\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-01-26T23:33:15.540Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "historialsanitario"
+        ],
+        "object_id": "2",
+        "object_repr": "Pompom - Conejo - Tratamiento A [TRATAMIENTO] (2026-01-12)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-01-26T23:33:52.491Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "historialsanitario"
+        ],
+        "object_id": "3",
+        "object_repr": "Pompom - Conejo - Tratamiento A [TRATAMIENTO] (2026-01-12)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-01-26T23:33:56.875Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "productosanitario"
+        ],
+        "object_id": "2",
+        "object_repr": "Tratamiento A [TRATAMIENTO]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Unidades disponibles\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-01-26T23:34:20.405Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "productosanitario"
+        ],
+        "object_id": "2",
+        "object_repr": "Tratamiento A [TRATAMIENTO]",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Unidades disponibles\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-01-26T23:34:24.447Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "gestion_sanitaria",
+            "historialsanitario"
+        ],
+        "object_id": "4",
+        "object_repr": "Pompom - Conejo - Tratamiento A [TRATAMIENTO] (2026-01-12)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
