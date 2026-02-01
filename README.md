@@ -51,6 +51,7 @@ ENDPOINTS
 ANIMALES
 ---------
 - POST /gestion_sanitaria/generics/animales/create/
+
 Crea un animal en el sistema.
 Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo esta acción.
 
@@ -61,7 +62,7 @@ Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo est
             “fecha_nacimiento”: “2025-05-12”,
             “estado”: “ACTIVO”
         }
-
+     
 - GET /gestion_sanitaria/generics/animales/
 
 Obtiene la lista de todos los animales existentes.
