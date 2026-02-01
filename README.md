@@ -53,6 +53,7 @@ ANIMALES
 - POST /gestion_sanitaria/generics/animales/create/
 Crea un animal en el sistema.
 Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo esta acción.
+
     Body:
         { 
             “nombre”: "Jupiter",
@@ -92,6 +93,7 @@ PRODUCTOS SANITARIOS
 
 Crea un producto sanitario en el sistema.
 Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo esta acción.
+    
     Body:
         {
             "nombre": "Vacuna B",
@@ -116,6 +118,7 @@ Los usuarios pertenecientes al grupo de Administradores y Veterinarios pueden ac
 
 Modifica los datos de un producto sanitario existente.
 Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo esta acción.
+    
     Body:
         {
             "nombre": "Tratamiento C",
@@ -132,6 +135,7 @@ HISTORIAL SANITARIO
 
 Crea un historial sanitario en el sistema.
 Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo esta acción.
+    
     Body:
         {
             "animal_id": 2,
@@ -153,6 +157,7 @@ Los usuarios pertenecientes al grupo de Administradores y Veterinarios pueden ac
 
 Modifica los datos de un historial sanitario existente.
 Los usuarios pertenecientes al grupo de Administradores pueden llevar a cabo esta acción.
+    
     Body:
         { 
             "animal_id": 2,
